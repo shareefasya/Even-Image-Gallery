@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Image Gallery Layout</title>
+<style>
+/*The default padding, margin, and height for the body and HTML document*/
+body, html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+/*The default transition for all of the elements*/
+* {
+	transition: ease 0.6s all;
+}
+
+/*The container that will hold the .figure*/
+.photos {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 960px;
+	padding: 4em 0 4em 0;
+}
+
+/*The container that will hold the picture as a background*/
+.figure {
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+	width: 218px;
+	height: 225px;
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 450px;		
+}
+
+/*The class indicator that will adjust the width of the .figure*/
+.adjust-width {
+	width: 450px;
+}
+
+/*The caption for the .figure*/
+.caption {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	width: 100%;
+	padding: 15px 0 15px 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+/*Changes the background color of the .caption when on hover*/
+.figure:hover .caption {
+	background-color: #45556B;
+}
+
+/*Adjusts the text and layout of the .caption*/
+.caption span {
+	color: #666;
+	text-transform: uppercase;
+	font-family: Calibri, sans-serif;
+	display: block;
+}
+
+/*Changes the .caption's text color when on hover*/
+.figure:hover .caption span {
+	color: #fff;
+}
+
+/*The .caption's title text*/
+.caption-title {
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+/*The .caption's sub text*/
+.caption-subtitle {
+	font-size: 10pt;
+}
+</style>
+</head>
+
+<body>
+<div class="photos">
+	<a href="#" class="figure adjust-width" style="background-image: url('art1.png')">
+		<span class="caption">
+			<span class="caption-title">Prints</span>
+			<span class="caption-subtitle">52 Products</span>
+		</span>
+	</a>
+	<a href="#" class="figure" style="background-image: url('art2.png')">
+		<span class="caption">
+			<span class="caption-title">Originals</span>
+			<span class="caption-subtitle">8 Products</span>
+		</span>
+	</a>
+	<a href="#" class="figure" style="background-image: url('art3.png')">
+		<span class="caption">
+			<span class="caption-title">Just Added</span>
+			<span class="caption-subtitle">23 Products</span>
+		</span>
+	</a>
+	<a href="#" class="figure" style="background-image: url('art4.png')">
+		<span class="caption">
+			<span class="caption-title">Trending</span>
+			<span class="caption-subtitle">5 Products</span>
+		</span>
+	</a>
+	<a href="#" class="figure" style="background-image: url('art5.png')">
+		<span class="caption">
+			<span class="caption-title">On Sale</span>
+			<span class="caption-subtitle">34 Products</span>
+		</span>
+	</a>
+	<a href="#" class="figure adjust-width" style="background-image: url('art6.png')">
+		<span class="caption">
+			<span class="caption-title">Featured</span>
+			<span class="caption-subtitle">122 Products</span>
+		</span>
+	</a>
+	
+</div>
+</body>
+
+</html>
